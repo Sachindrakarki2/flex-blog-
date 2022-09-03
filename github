@@ -1,0 +1,13 @@
+case 1; every project for the first, time, once:
+2.got the github and create new report
+3.got ot your localhost, inside of youyr root direcotary of your project, open terminal there
+run'git init' initiliaze the gitt so that we can run git commands
+4.to run 'git add .' for adding all the new filews and folders to the index or user specific file or folders
+name insted of . to add that files only in the index
+5. run 'git commit -m "write some message her"'
+6.copy 3 lines of codes from github,
+-setting up the remote address
+-making default branch
+-send code to the github
+
+
