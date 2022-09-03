@@ -110,7 +110,7 @@ main {
 
 .read-by-country,.read-by-date{
 
-  background: green;
+  background: rgb(96, 128, 0);
   padding: 2rem;
   border: radius 5px;
   margin-bottom: 2rem;
