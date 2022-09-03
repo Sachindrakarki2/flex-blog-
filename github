@@ -12,14 +12,14 @@ name insted of . to add that files only in the index 5. run 'git commit -m "writ
 git config --global user.name "sachindrakarki2"
 git config --global user.email "sachindrakarki2@gmail.com"
 
-
-
 case 2:after first push
- git add .
+git add .
 git commit-m "the message"
 git push
 
+git branch
+git checkout <branch name> to create new branch
+git checkout test
 
-git branch 
-git checkout <branch name>
-git checkout stest
+go to the branch that you want merge into
+git merge <from branch>
