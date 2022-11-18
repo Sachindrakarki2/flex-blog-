@@ -6,50 +6,46 @@ body {
 .container {
   width: 80%;
   margin: auto;
-  
 }
+
 /* global message */
 .global-msg {
   background: rgb(0, 0, 104);
-  color: rgb(255, 255, 255);
+  color: white;
+  line-height: 32px;
 }
+
 .gbl-content {
   display: flex;
   justify-content: space-between;
 }
 
-.btn-box {
-  display: flex;
-  justify-content: flex-end;
-}
 /* top menu section */
-.topnav-bar {
+
+.nav-bar {
   background: blue;
-  color: white;
+  color: wheat;
   font-size: 25px;
 }
 
-.buttom {
-  display: flex;
-  justify-content: flex-end;
-}
 .top-menu {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu ul {
   list-style: none;
   display: flex;
-  justify-content: end;
 }
 .menu ul li {
   margin-left: 16px;
 }
 
+/* hero section */
 .hero {
   min-height: 80vh;
-  background: url(img/123.jpg);
+  background: url(img/123.jpg) no-repeat center center;
   background-size: cover;
 
   display: flex;
@@ -58,24 +54,26 @@ body {
 }
 
 .hero-content {
-  background: rgb(0, 0, 0, 0, 543);
+  background: rgba(0, 0, 0, 0.643);
   width: 450px;
-  color: blue;
-  backdrop-filter: blur(25px);
+  color: white;
+  backdrop-filter: blur(3px);
   padding: 10px 20px;
   text-align: center;
   border-radius: 5px;
-  box-shadow: 0px 0px 15px white;
+  /* border: 1px solid white; */
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.48);
 }
 
-/* footer section */
+.main {
+  margin-top: 32px;
 
-footer {
-  background-color: black;
-  color: yellow;
-  padding: 50px 10px;
-  text-align: center;
-  margin: top 100px;
+  display: flex;
+}
+
+.main-content {
+  width: 66%;
+  margin-right: 1rem;
 }
 
 article {
@@ -90,70 +88,72 @@ article {
   margin-right: 1rem;
 }
 
-main {
-  margin-top: 32px;
+.btn-box {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-box button:hover {
+  cursor: pointer;
+  background: rgb(23, 204, 59);
+}
+.side-links {
+  width: 22%;
+}
+
+.read-by-country,
+.read-by-date {
+  padding: 1rem;
+  background: rgba(144, 168, 3, 0.545);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+/* recc section */
+.recc {
+  background: linear-gradient(
+    to right,
+    rgba(188, 113, 0, 0.969),
+    rgb(33, 209, 24)
+  );
+  margin-top: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.card-list {
   display: flex;
   justify-content: space-between;
 }
 
-*{
-  box-sizing:border-box;
-}
-.main-content {
-  width: 66%;
-  margin-right: 1rem;
-}
-.side-links {
-  /* background: green; */
-  width: 50%;
-}
-
-.read-by-country,.read-by-date{
-
-  background: green;
-  padding: 2rem;
-  border: radius 5px;
-  margin-bottom: 2rem;
-}
- .recc {
-  background:rgb(105, 98, 98)
-  padding-box:2rem;
-  padding-top:3px ;
-  padding-bottom:5px;
-
- }
-
-.card{ 
-  
-  background: rgb(158, 17, 17) ;
-  
+.card {
+  width: 300px;
+  background: white;
+  padding-bottom: 1rem;
   border-radius: 5px;
-  padding: buttom 1rem;
-  border-radius: 5px;
-  box-shadow: -5px 5px 10px 5px cornflowerblue;
+  box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.3);
   min-height: 300px;
-  margin: 100px 10px;
-}
-.card img{
-  border: radius 5px 5px 0 0;
+  margin: 10px 10px;
 }
 
-.card-list {display: flex;
-justify-content: space-between;
+.card img {
+  border-radius: 5px 5px 0 0;
 }
-.card-list > div{
-  display: flex;
-}
-article button,.card button{
-  background: yellow;
-  padding: 8px 16px;
+
+article button,
+.card button {
+  background: orangered;
+  /* font-size: 18px; */
+  padding: 10px 10px;
   border: none;
+  border-radius: 5px;
 }
 
-.card button:hover{ 
+.card button {
+  width: 100%;
+}
+.card button:hover {
   cursor: pointer;
-  background-color: red;
-
+  background: rgba(31, 188, 17, 0.568);
 }
 
 /* subscription */
@@ -161,67 +161,15 @@ article button,.card button{
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 30px 0;
-
-
+  padding: 50px;
 }
 
-
-
-/* media queries */
-@media(max-width:768px){ 
-  
-.main{
-  display: flex;
-  flex-direction: column;
+/* footer section */
+footer {
+  background: black;
+  color: white;
+  /* padding: 50px 10px; */
+  text-align: center;
+  margin-top: 10px;
+  padding: 30px 10rem;
 }
-  .main-content{
-    width: 100%;
-
-  }
-
-.side-links{
-width: 100%;
-
-display: flex;}
-
-.side-link >div{
-  min-width: 50%;
-  width: 100%;
-}
-
-
-.read-by-country,.read-by-date{
-
-min: width 50%;
-}
-.card-list {
-  display: flex;
-  flex-direction: column;
-}
-
-
-}
-  
-
-@media(max-width:550px){ 
-  .card-list > div{
-
-    display: flex;
-    flex-direction: column;
-  }
-  article {
-    flex-direction: column;
-  }
-  
-  
-  .slide-link {
-    flex-direction: column;
-  }
-  
-}
-
-
-
-
-
